@@ -1,0 +1,36 @@
+##Lợi ích của Clover:
+
+Có thể boot vào Mac OSX 10,4-10,9, Windows và Linux EFI
+Có thể boot vào LegacyOS (Windows XP, Linux, hệ điều hành DOS)
+Tự động phát hiện phần cứng và thiết lập . Nhưng có thể thay đổi bằng cách edit lại config.plist
+Với Clover bạn có thể khởi động vào hệ điều hành khác từ Startup Disk prefpane của Mac OS
+Full độ phân giải trong giao diện đồ họa boot của các loại card màn hình
+ Điều khiển bằng chuột ngay trong màn hình boot (giống Mac OS)
+Tự động cấu hình bằng OEM tên nhà sản xuất.
+Autopatch OemDSDT để hoạt động được trên OSX
+SMBIOS sẽ được tự động lấy cho phù hợp cấu hình máy.
+ACPI sẽ được patch theo tiêu chuẩn 4.0. DSDT đã được patch sẽ được nạp từ phân vùng khởi động hoặc từ thư mục EFI
+Tự động cấu hính ACPI (SSDT-xx, APIC, BOOT, SLIC, khe, SRAT, UEFI …)
+Thiết lập một cách chính xác PowerProfile cho máy tính xách tay (notebook), máy tính để bàn, máy trạm
+RestartFix
+Sleep / Wake hệ thống
+Có thể thay đổi giá trị PCIRootUID (0,1) cho các card màn hình.
+Hỗ trợ active card màn hình ATI, NVIDIA và Intel. Cho phep edit một số thành phần quan trọng trong đó.
+Có thể thêm vào thông tin EDID của màn hình để fix các lỗi về graphics
+Fix các lỗi về USB
+Patch lại AppleHDA và HDMI.
+Ethernetbuilin
+Enable CPU Turbo
+Enable P và C state ngay ngoài màn hình boot
+hỗ trợ cho CPU ​​Atom và Ivy Bridge
+Fix lại kext trong kernelcache cho phần cứng không được hỗ trợ
+Thêm được kext và inject trực tiếp từ CLover\Kext Folder
+Chế độ bảo mật cho FireWire
+Thay đổi được thời gian chờ lúc boot
+Hỗ trợ thay đổi Theme: hỗ trợ chủ đề, biểu tượng riêng, phông chữ, hình nền, chuột.
+Thay đổi dc ngôn ngữ.
+Lưu lại các thành phần gốc của ACPI bằng cách nhấn F4
+Kiểm tra DSDT patch với F5
+Lưu rom card màn hình vào EFI / misc bằng cách nhấn F6
+Lưu ảnh chụp màn hình từ giao diện bằng cách nhấn F10
+Nhấn F12 để điều khiển DVD ngay ở giao diện boot
