@@ -7,14 +7,13 @@
 ---
 
 - Họ Tên: Nguyễn Văn Hùng
-- Phone: 0377930334
-- Email: vanhung4499@gmail.com
-- GitHub: [vanhung4499](https://github.com/vanhung4499)
-- Facebook: [vanhung4499](https://www.facebook.com/vanhung4499)
-- Facebook Page: [Hackintosh AZ](https://www.facebook.com/Hackintosh-AZ-1210860139083557/)
+- Phone: 0963798314
+- Email: vanhungth95@gmail.com
+- GitHub: [Halelluja12](https://github.com/Halelluja12)
+- Facebook: [Halelluja12](https://www.facebook.com/harrynguyenth)
 - Facebook Group: [Hackintosh - The OS X on PC World](https://www.facebook.com/groups/hackintoshPC/)
-- Zalo: 0377930334
-- Địa chỉ: Làng đại học, Đại học quốc gia TPHCM - Thủ Đức
+- Zalo: 0963798314
+- Địa chỉ: N/A
 
 __Cài dịch vụ hackintosh là việc làm thêm nên các bạn đừng gọi trong giờ hành chính, xin vui lòng nhắn tin qua facebook hoặc zalo.__
 
