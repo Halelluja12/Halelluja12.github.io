@@ -6,7 +6,7 @@ aside:
   toc: true
 ---
 ## Hackintosh là gì?
-__Hackintosh__ là hệ thống macOS chạy trên phần cứng không phải của Apple. Hiểu đơn giản là bạn cài macOS lên cái pc hay laptop của bạn thì nó gọi là __Hackintosh__. Nếu bạn cài đặt tốt thì __Hackintosh__ hoàn toàn có thể có được sự mượt mà và ổn định như real mac.
+__Hackintosh__ là hệ thống macOS chạy trên phần cứng không phải của Apple. Hiểu đơn giản là bạn cài macOS lên desktop hay laptop của bạn thì nó gọi là __Hackintosh__. Nếu bạn cài đặt tốt thì __Hackintosh__ hoàn toàn có thể có được sự mượt mà và ổn định như real mac.
 
 ![desktop](/assets/images/hackintosh/intro/desktop.png)
 
