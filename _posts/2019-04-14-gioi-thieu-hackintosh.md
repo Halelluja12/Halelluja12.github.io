@@ -10,8 +10,6 @@ __Hackintosh__ là hệ thống macOS chạy trên phần cứng không phải c
 
 ![desktop](/assets/images/hackintosh/intro/desktop.png)
 
-Không cần nói quá nhiều về lý thuyết show hàng con pc của mình đang chạy hackintosh của mình chạy macOS mới nhất.
-Cấu hình: CPU Intel core i5-4590 + Main: Gigabyte B85 + 8GB RAM DDR3 + Card rời AMD RX 570 4GB.
 
 ## Cài Hackintosh để làm gì?
 Cài hackintosh đương nhiên là để có thể sử dụng được macOS mà không cần mua real mac. macOS rất mượt mà giao diện rất đẹp và nó có những phần mềm riêng biệt mà Windows hay Linux không có như: Xcode cho lập trình, Sketch cho UX/UI, Final Cut Pro, iMovie cho dựng phim, ... Hackintosh hoàn toàn có thể đồng bộ sử dụng iCloud, iMessage và Facetime, có thể sử dụng handoff nếu bạn có card wifi được support. Về mặt hiệu năng sẽ tùy thuộc vào phần cứng của bạn. Nếu bạn có nhu cầu sử dụng macOS nhưng lại không đủ tiền mua real mac thì hackintosh là một giải pháp hợp lí và hiệu quả, nhưng nếu nhiều tiền thì cứ mua real mac.
@@ -25,5 +23,4 @@ Cài hackintosh đương nhiên là để có thể sử dụng được macOS m
 | Hackintosh (macOS) sử dụng rất mượt mà, ổn định, hiệu năng sẽ hơn windows trong khá nhiều tác vụ và hoàn toàn có thể đồng bộ với hệ sinh thái của Apple | Hackintosh (macOS) sẽ không dành cho việc chơi game mà chỉ dành cho công việc, muốn chơi game bạn cài dual boot hackintosh và windows để chơi |
 
 ## Tổng kết
-Bài giới thiệu cơ bản về hackintosh cho bạn cái nhìn cơ bản về Hackintosh. Mình là một coder nên viết văn không giỏi, bài viết có thể còn sơ sài thiếu, mong
-các bạn report và đóng góp trên github. Nếu bạn vẫn không tin những điều trên hãy vào group facebook [Hackintosh - The OS X on PC World](https://www.facebook.com/groups/hackintoshPC/) để tham khảo ý kiến từ các thành viên khác trong nhóm. Mình sẽ viết một số bài đánh giá chi tiết về Hackintosh sau.
+Bài giới thiệu cơ bản về hackintosh cho bạn cái nhìn cơ bản về Hackintosh. Các bạn vào group để tham khảo thêm về hệ điều hành mới này
