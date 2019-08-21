@@ -1,7 +1,7 @@
 ---
   title: Tạo bộ cài vanilla hackintosh dễ dàng nhất
   author: Nguyen Van Hung
-  tags: hackintosh installer clover usb kirito4499
+  tags: hackintosh installer clover usb
   aside:
     toc: true
 ---
@@ -113,4 +113,3 @@
 + Bài viết hướng dẫn cách làm bộ cài hackintosh một cách dễ nhất, bạn không cần macOS, không cần tạo máy ảo để làm usb, rút ngắn một công đoạn dài nếu bạn không có real mac.
 + __Nhưng mà cách này cũng sẽ có nhiều rủi ro sẽ gây lỗi nếu file không được bảo toàn do đó vấn khuyễn khích các bạn làm bộ cài trên macOS__
 
-__Nếu bạn cảm thấy bài viết hay và có ích hãy ủng hộ star github và donate để mình có thêm động lực viết bài.__
