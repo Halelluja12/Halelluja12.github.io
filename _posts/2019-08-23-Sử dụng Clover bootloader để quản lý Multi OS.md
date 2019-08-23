@@ -1,3 +1,4 @@
+
 ---
 title: Sử dụng Clover bootloader để quản lý Multi OS
 tags: hackintosh clover
@@ -51,7 +52,7 @@ UEFI BIOS->BOOTX64.efi->Apple’s boot.efi->mach_kernel
 
 -   Đối với UEFI boot, nó cần load driver để nhận diện được UEFI của từng nhà sản xuất:  
     Các driver cơ bản để nhận diện được kê ra như sau:
--   HFSPlus.efi, OsxFatBinaryDrv-64.efi, OsxAptioFixDrv-64.efi, EmuVariableRuntimeDxe.efi HFSPlus.efi, OsxFatBinaryDrv-64.efi,  ngoài ra một số driver mới được dev phát triển hiện này là AptioMemoryfix.efi 
+-   **HFSPlus.efi, OsxFatBinaryDrv-64.efi, OsxAptioFixDrv-64.efi, EmuVariableRuntimeDxe.efi HFSPlus.efi, OsxFatBinaryDrv-64.efi,  ngoài ra một số driver mới được dev phát triển hiện này là AptioMemoryfix.efi** 
 
 1.  Driver này hoạt động trên main Gigabyte EFI. Đây là lựa chọn tốt nhất cho UEFI khởi động, tức không cần phải thêm bất kỳ driver nào nữa (các bạn chú ý hai driver này nhận diện ổ EFI định dạng fat 32 và ổ Mac định dạng HFS)
 2.  HFSPlus.efi, OsxFatBinaryDrv-64.efi, OsxLowMemFixDrv-64.efi
@@ -95,37 +96,37 @@ Mặc định Clover bootloader không hỗ trợ driver cho linux để load tr
 
 ### Có bao nhiêu cách để thêm Linux vào menu Clover!?
 
-**Cách 1**: Chỉ cần chép driver của rEFInd vào thư mục drivers64UEFI là, trong thẻ GUI ở khung scan tích vào cả 2 ô kernel và linux là menu của Linux tự động add vào menu clover
+#### Cách 1: Chỉ cần chép driver của rEFInd vào thư mục drivers64UEFI là, trong thẻ GUI ở khung scan tích vào cả 2 ô kernel và linux là menu của Linux tự động add vào menu clover
 
 -   Đơn giản, không phải thao tác gì nhiều. Cách này dùng cho những distro phổ biến
 -   Không tùy biến icon được, một số distro mới Clover không nhận diện được
 
-**Cách 2**: Thêm menu trực tiếp cho linux vào Clover bằng cách boot qua vmlinuz. Thực ra bản chất cũng như cách 1 nhưng ta có thể tùy chỉnh được các thiết lập
+#### Cách 2: Thêm menu trực tiếp cho linux vào Clover bằng cách boot qua vmlinuz. Thực ra bản chất cũng như cách 1 nhưng ta có thể tùy chỉnh được các thiết lập
 
 -   Không phụ thuộc vào grub2
 -   Dễ chỉnh sửa thuộc tính boot
 -   Không thành công ở một số trường hợp
 
-**Cách 3**: Thêm menu cho Linux trên Clover bằng cách chạy thông qua file grubx64.efi (hoặc shimx64.efi hay bootx64.efi)
+#### Cách 3:  Thêm menu cho Linux trên Clover bằng cách chạy thông qua file grubx64.efi (hoặc shimx64.efi hay bootx64.efi)
 
 -   Tận dụng config mặc định của Grub2, dùng cho một số distro đặc biệt không thể load thông qua vmlinuz trực tiếp được thí dụ như các distro họ Android hay các distro mới ra gần đây có cấu trúc phân vùng đặc biệt khiến driver chưa thể nhận diện được
 -   Chỉ cần địa chỉ phân vùng PARTGUID, bạn có thể lấy thông qua boot.log trên Clover configurator
 -   Cần phải thao tác thêm vào grub2
 
-Cách 4: Thêm menu cho Linux vào Clover bằng cách boot trực tiếp thông qua kernel và vmlinuz được người dung chỉ định
+#### Cách 4: Thêm menu cho Linux vào Clover bằng cách boot trực tiếp thông qua kernel và vmlinuz được người dung chỉ định
 
 -   Menu tùy biến được nhiều, phù hợp với mọi distro Linux
 -   Config cần thiết lập nâng cao, tận dung phương pháp BOOT STUB của linux theo Grub2_efi
 -   Copy trực tiếp kernel và vmlinuz vào phân vùng EFI để Boot
 
-Với cách 2 và cách 3 hầu hết các thiết lập đều đã có sẵn duy nhất có 2 giá trị ta cần phải tìm đó , còn với cách 4 khuyên dung nhất vì thành công tronh mọi trường hơp. Ngoài ra chúng ta cần tới UUID (AddArguments) và PARTUUID (Volume) của phân vùng OS mà chúng ta định them vào
+Với **cách 2** và **cách 3** hầu hết các thiết lập đều đã có sẵn duy nhất có 2 giá trị ta cần phải tìm đó , còn với cách 4 khuyên dung nhất vì thành công tronh mọi trường hơp. Ngoài ra chúng ta cần tới UUID (AddArguments) và PARTUUID (Volume) của phân vùng OS mà chúng ta định them vào
 
--   Đối với linux thường là phân vùng hệ thống EX4 với kernel dạng initrd.img & vmlinuz
--   Đối với windows boot thông qua file bootmgfw.efi chứa trong \EFI\Microsoft\Boot\bootmgfw.efi với UUID là partition EFI
+-   Đối với linux thường là phân vùng hệ thống EX4 với kernel dạng **initrd.img** & **vmlinuz**
+-   Đối với windows boot thông qua file bootmgfw.efi chứa trong **\EFI\Microsoft\Boot\bootmgfw.efi** với UUID là partition EFI
 
-Có 2 cách để xác định UUID của phân vùng OS của bạn :
+#### Có 2 cách để xác định UUID của phân vùng OS của bạn :
 
--   Thông qua linux với lệnh trên Terminal : “sudo blkid”
+-   Thông qua linux với lệnh trên Terminal : “**sudo blkid**”
 
 -   Sử dụng Clover Configurator với chức năng regenator boot.log ta sẽ xem được UUID của từng phân vùng
 
@@ -139,7 +140,7 @@ Thực ra đối với Windows và Mac OS thì không cần phải thêm menu l�
 -   _Lưu ý nếu boot từ file  ******.efi**  thì địa chỉ phân vùng là của EFI; còn từ boot trực tiếp từ kernel thì địa chỉ phân vùng là phân vùng cài đặt OS_
 -   **Path**: Là đường dẫn đến file  ****.efi  hoặc  vmlinuz
 -   **AddArguments**:Với Mac OS kiểu như này:  
-    **_slide=0 dart=0 nv_disable=1 -gux_defer_usb2 kext-dev-mode=1_**Với Linux thì có cấu trúc như này  
+    **_**slide=0 dart=0 nv_disable=1 -gux_defer_usb2 kext-dev-mode=1**_**Với Linux thì có cấu trúc như này  
     **_root=UUID=__62b30549-d7c3-4e82-b905-92031a7a7f50_ _ro initrd=initrd.imgadd_efi_memmap_** or  **_root=UUID=__62b30549-d7c3-4e82-b905-92031a7a7f50_ _ro initrd=\EFI\ubuntu\initrd.img  add_efi_memmap_**
 
 (thêm lệnh  **quite**  nếu muốn ẩn các tiến trình khi boot)  
@@ -154,8 +155,8 @@ Thay chuỗi số phía trên bằng UUID phân vùng chứa OS mà bạn muốn
 -   **VolumeType**: chọn  **Internal**  hoặc  **External**
 Để trực quan trong chỉnh config.plist bạn có thể sử dụng máy ảo chạy Mac OS và cài thêm Clover configurator (xem cách sử dụng máy ảo Mac OS [tại đây](https://niemtin007.blogspot.com/2014/12/tao-may-ao-macos-vmware-hackintosh.html)). Nhưng để không mất thời gian bạn có thể chỉnh sửa config.plist bằng trình edit thông dụng như [Notepad++](https://notepad-plus-plus.org/) cũng được chỉ cần bạn cẩn thận một chút để tránh lỗi cú pháp là được
 
--   Tải Clover ISO tại đây: [https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/)
--   Tiến hành giải nén file vừa tải, mount Clover-v2.3k-xxxx-X64.iso và copy thư mục CLOVER ra phân vùng EFI của ổ cứng để tiến hành chỉnh sửa config.plist
+-   Tải Clover ISO tại đây: [Clover Bootloader releases](https://github.com/Dids/clover-builder/releases)
+-   Tiến hành giải nén file vừa tải, mount Clover-v2.3k-xxxx-X64.lzma iso và copy thư mục CLOVER ra phân vùng EFI của ổ cứng để tiến hành chỉnh sửa config.plist
 -   Config mẫu của mình Tại Đây
 
 Cách mount partition EFI trực tiếp trên windows : Sử dụng công cụ diskpart
