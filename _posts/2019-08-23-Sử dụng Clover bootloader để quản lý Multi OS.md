@@ -1,7 +1,7 @@
 
 ---
 title: Sử dụng Clover bootloader để quản lý Multi OS
-tags: hackintosh clover
+tags: hackintosh cloverbootloader
 author: Nguyen Van Hung
 aside:
   toc: true
