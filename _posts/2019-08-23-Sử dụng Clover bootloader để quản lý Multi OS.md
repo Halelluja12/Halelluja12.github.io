@@ -46,6 +46,7 @@ aside:
 ## Nguyên tắc hoạt động:
 
  ### Ở chế độ UEFI boot:
+ 
 UEFI BIOS->BOOTX64.efi->Apple’s boot.efi->mach_kernel
 
 -   Đối với UEFI boot, nó cần load driver để nhận diện được UEFI của từng nhà sản xuất:  
