@@ -120,7 +120,7 @@ Có 2 cách để xác định UUID của phân vùng OS của bạn :
 
 -   Sử dụng Clover Configurator với chức năng regenator boot.log ta sẽ xem được UUID của từng phân vùng
 
-![](/assets/images/hackintosh/intro/desktop.png)
+![](/assets/images/hackintosh/clover/log.png)
 
 Các bạn mở file config.plist trong EFI/CLOVER rồi chuyển sang thẻ Gui và làm như hình. Click vào dấu “+” ở khung “Custom Entries” để thêm Menu mới cho UEFI mode
 
