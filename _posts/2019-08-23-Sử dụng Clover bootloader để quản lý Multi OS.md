@@ -67,7 +67,7 @@ Ngoài ra còn có một số Driver khác hỗ trợ, tuy nhiên đây là nh�
 **=> Vậy các bạn đã hiểu là một khi muốn sử dụng UEFI để boot thì phải cài đặt Driver cho main, tùy từng trường hợp cụ thể mà chọn Driver thích hợp nếu không sẽ không boot được**
 
 
-### Ở chế độ BIOS boot
+### Ở chế độ UEFI boot:
 BIOS->boot0->boot1->BOOT->CLOVERIA32.efi->Apple’s boot.efi->mach_kernel2 bit)  
 BIOS->boot0->boot1->BOOT->CLOVERX64.efi->Apple’s boot.efi->mach_kernel4 bit)
 
