@@ -11,7 +11,7 @@ aside:
 Bản thân không có một ngắt vật lý nào hết, mà là do kext của Mac không sử dụng được cổng đó nên nó chờ System quay lại, nó sẽ lắng nghe tất cả các port.  
  Lý do sinh ra guide này vì lỗi huyền thoại trên khá là bất tiện và rất hay gặp phải bởi newbie, mặc dù có thể khắc phục tạm thời bằng Limited patch port USB on-the-fly như nó không ổn định và không sử dụng được lâu dài. 
 
-
+![enter image description here](/assets⁩/images⁩/⁨hackintosh⁩/usb/1.png)
 
 # Các công cụ, công đoạn cần làm bao gồm :
 
