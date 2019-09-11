@@ -80,4 +80,4 @@ Replace: <584f5349>
  - Riêng Webcam là một dạng cổng kêt nối 2.0 với conector là internal nên chắc chắn phải để là internal
  - Video hướng dẫn ví dụ :
 
-{@youtube: [https://www.youtube.com/watch?v=VMBlKsDp23E](https://www.youtube.com/watch?v=VMBlKsDp23E)}
+https://www.youtube.com/watch?v=VMBlKsDp23E
