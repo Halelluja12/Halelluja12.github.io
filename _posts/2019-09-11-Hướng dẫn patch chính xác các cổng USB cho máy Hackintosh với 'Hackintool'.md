@@ -7,8 +7,6 @@ aside:
 ---
 
 
-# Hướng dẫn patch chính xác các cổng USB cho máy Hackintosh với 'Hackintool'
-
 **"Still waiting for root device"** sinh ra khi phân vùng được coi là System tự nhiên bị ngắt khỏi hệ thống. Ví dụ boot bộ cài mà cổng usb bị ngắt, boot ổ cứng mà cổng sata bị ngắt.  
 Bản thân không có một ngắt vật lý nào hết, mà là do kext của Mac không sử dụng được cổng đó nên nó chờ System quay lại, nó sẽ lắng nghe tất cả các port.  
  Lý do sinh ra guide này vì lỗi huyền thoại trên khá là bất tiện và rất hay gặp phải bởi newbie, mặc dù có thể khắc phục tạm thời bằng Limited patch port USB on-the-fly như nó không ổn định và không sử dụng được lâu dài. 
@@ -81,3 +79,5 @@ Replace: <584f5349>
  - Cổng vào hoạt động sẽ hiển thị màu xanh lá như hình
  - Riêng Webcam là một dạng cổng kêt nối 2.0 với conector là internal nên chắc chắn phải để là internal
  - Video hướng dẫn ví dụ :
+
+{@youtube: [https://www.youtube.com/watch?v=VMBlKsDp23E](https://www.youtube.com/watch?v=VMBlKsDp23E)}
