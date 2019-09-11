@@ -11,7 +11,7 @@ aside:
 Bản thân không có một ngắt vật lý nào hết, mà là do kext của Mac không sử dụng được cổng đó nên nó chờ System quay lại, nó sẽ lắng nghe tất cả các port.  
  Lý do sinh ra guide này vì lỗi huyền thoại trên khá là bất tiện và rất hay gặp phải bởi newbie, mặc dù có thể khắc phục tạm thời bằng Limited patch port USB on-the-fly như nó không ổn định và không sử dụng được lâu dài. 
 
-![enter image description here](/assets⁩/images⁩/⁨hackintosh⁩/usb/1.jpg)
+![enter image description here](/assets⁩/images⁩/⁨hackintosh⁩/usb/1.png)
 
 # Các công cụ, công đoạn cần làm bao gồm :
 
@@ -81,3 +81,17 @@ Replace: <584f5349>
  - Video hướng dẫn ví dụ :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VMBlKsDp23E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*Sau khi config đúng cổng, tiến hành xoá bỏ các cổng USB không hoạt động (không sáng màu xanh) sau đó tiến hành export SSDT-UIAC.aml config các cổng đã làm vừa nãy cho vào Clover/ACPI/Patched*
+
+##  USB power property injection for Sierra & Later MacOS version
+
+**Chú ý** : *bước này chỉ cần làm với các bản macOS từ Sierra trở về sau, do từ 10.12 Apple sử dụng cách quản lý năng lượng cho các cổng USB khác với **AppleBusPowerControllerUSB** thay vì **AppleBusPowerController** như trước* 
+
+Có hai trường hợp xảy ra : 
+- PC có ECDT.aml  OEM ACPI với Device EC trong bảng DSDT hiệu quả ta làm như sau :
+- Nhấn F4 từ màn hình clover để dump toàn bộ các bảng ACPI, tiến hành kiểm tra trong Clover/APCI/Origin/ thấy một bảng ACPi có tên ECDT.aml mở lên là kiểm tra đường dẫn tơi device EC
+
+[enter link description here](https://upanh.vn-zoom.org/images/2019/09/11/Screen-Shot-2019-09-11-at-11.44.03-PM.png)
+
+- Nếu trùng với đường dẫn của device EC trong DSDT chứng tỏ device EC có hiệu quả chỉ cần patch rename EC0 to EC trong config.plist là được
