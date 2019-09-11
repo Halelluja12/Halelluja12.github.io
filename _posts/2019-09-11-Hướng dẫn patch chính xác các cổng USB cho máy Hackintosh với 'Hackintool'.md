@@ -11,7 +11,7 @@ aside:
 Bản thân không có một ngắt vật lý nào hết, mà là do kext của Mac không sử dụng được cổng đó nên nó chờ System quay lại, nó sẽ lắng nghe tất cả các port.  
  Lý do sinh ra guide này vì lỗi huyền thoại trên khá là bất tiện và rất hay gặp phải bởi newbie, mặc dù có thể khắc phục tạm thời bằng Limited patch port USB on-the-fly như nó không ổn định và không sử dụng được lâu dài. 
 
-![enter image description here](/assets⁩/images⁩/⁨hackintosh⁩/usb/1.png)
+![enter image description here](https://upanh.vn-zoom.org/images/2019/09/11/23ol9v1.jpg)
 
 # Các công cụ, công đoạn cần làm bao gồm :
 
@@ -92,6 +92,6 @@ Có hai trường hợp xảy ra :
 - PC có ECDT.aml  OEM ACPI với Device EC trong bảng DSDT hiệu quả ta làm như sau :
 - Nhấn F4 từ màn hình clover để dump toàn bộ các bảng ACPI, tiến hành kiểm tra trong Clover/APCI/Origin/ thấy một bảng ACPi có tên ECDT.aml mở lên là kiểm tra đường dẫn tơi device EC
 
-[enter link description here](https://upanh.vn-zoom.org/images/2019/09/11/Screen-Shot-2019-09-11-at-11.44.03-PM.png)
+![enter image description here](https://upanh.vn-zoom.org/images/2019/09/11/Screen-Shot-2019-09-11-at-11.44.03-PM.png)
 
 - Nếu trùng với đường dẫn của device EC trong DSDT chứng tỏ device EC có hiệu quả chỉ cần patch rename EC0 to EC trong config.plist là được
