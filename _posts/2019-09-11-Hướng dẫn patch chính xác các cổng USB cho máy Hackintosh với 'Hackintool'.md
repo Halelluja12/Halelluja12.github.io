@@ -97,6 +97,8 @@ Có hai trường hợp xảy ra :
 - Nếu trùng với đường dẫn của device EC trong DSDT chứng tỏ device EC có hiệu quả chỉ cần patch rename EC0 to EC trong config.plist là được, một số trường hợp là H_EC hoặc ECDT
 
 > **Trường hợp không có Device EC0, H_EC..vv trong DSDT hoặc giá trị của Method_STA trả về return (zero) trong device EC0 ta tiến hành Inject Fake EC device**
+
+
 - Tạo SSDT-EC.dsl với nội dung như sau :
 ```
 // Inject Fake EC device
