@@ -84,6 +84,10 @@ Replace: <584f5349>
 
 *Sau khi config đúng cổng, tiến hành xoá bỏ các cổng USB không hoạt động (không sáng màu xanh) sau đó tiến hành export SSDT-UIAC.aml config các cổng đã làm vừa nãy cho vào Clover/ACPI/Patched*
 
+## Môt số trường hợp cần thêm : fakePCIID + FakePCIID XHCIMux kext để root các cổng USB High Speed cho device XHCI quản lý đối với các mã sau :  
+
+- **VendorID** : **DeviceID** : `8086:1e31`, `8086:9c31`, `8086:9cb1`, `8086:9c31`, and `8086:8cb1`
+
 ##  USB power property injection for Sierra & Later MacOS version
 
 **Chú ý** : *bước này chỉ cần làm với các bản macOS từ Sierra trở về sau, do từ 10.12 Apple sử dụng cách quản lý năng lượng cho các cổng USB khác với **AppleBusPowerControllerUSB** thay vì **AppleBusPowerController** như trước* 
