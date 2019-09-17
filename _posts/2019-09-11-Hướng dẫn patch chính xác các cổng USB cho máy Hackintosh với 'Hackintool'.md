@@ -84,9 +84,13 @@ Replace: <584f5349>
 
 *Sau khi config đúng cổng, tiến hành xoá bỏ các cổng USB không hoạt động (không sáng màu xanh) sau đó tiến hành export SSDT-UIAC.aml config các cổng đã làm vừa nãy cho vào Clover/ACPI/Patched*
 
-## Môt số trường hợp cần thêm : fakePCIID + FakePCIID XHCIMux kext để root các cổng USB High Speed cho device XHCI quản lý đối với các mã sau :  
+## Môt số trường hợp cần thêm : 
 
-- **VendorID** : **DeviceID** : `8086:1e31`, `8086:9c31`, `8086:9cb1`, `8086:9c31`, and `8086:8cb1`
+ - **VendorID** : **DeviceID** : 
+ - **fakePCIID** + **FakePCIID XHCIMux kext** để root các cổng USB High Speed cho device XHCI quản lý đối với các mã sau :  **8086:1E31**, **8086:8C31**, **8086:8CB1**, **8086:8D31**, **8086:9C31**, **8086:9CB1**
+ - **XHCI-9-series** kext  cho mã :   **8086:8CB1**
+ - **8086:8D31**, **8086:A2AF**, **8086:A36D**, **8086:9DED** sử dụng thêm **XHCI-unsupport** kext
+
 
 ##  USB power property injection for Sierra & Later MacOS version
 
