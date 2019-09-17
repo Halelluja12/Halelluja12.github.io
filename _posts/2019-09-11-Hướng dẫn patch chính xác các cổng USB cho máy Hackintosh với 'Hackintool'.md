@@ -79,6 +79,13 @@ Replace: <584f5349>
  - Cổng vào hoạt động sẽ hiển thị màu xanh lá như hình
  - Riêng Webcam là một dạng cổng kêt nối 2.0 với conector là internal nên chắc chắn phải để là internal
  - Đối với cổng **TypeC** : tiến hành cắm test và đổi đầu cắm lại, nếu hiện ở 2 port **SSxx** khác nhau thì để conector là TypeC còn nếu đổi đầu mà vẫn là **SSxx** thì conector là **TypeC+ Sw**
+ 
+ |Loại cổng| Dạng kết nối |
+|--|--|
+| usb 2.0 |  **USB2** or **internal**|
+|usb 3.0|**USB3** or **internal**|
+|usb 3.1|**TypeC** or **TypeC+Sw**|
+
  - Video hướng dẫn ví dụ :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VMBlKsDp23E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
